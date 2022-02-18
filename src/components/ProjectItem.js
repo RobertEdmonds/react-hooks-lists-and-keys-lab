@@ -2,7 +2,7 @@ import React from "react";
 
 function ProjectItem({ name, about, technologies }) {
   const techArray = technologies.map((item)=>{
-    return <span>{item}</span>
+    return <span key={item}> {item}</span>
   })
   return (
     <div className="project-item">
